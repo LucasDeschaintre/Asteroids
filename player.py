@@ -1,4 +1,4 @@
-from pygame import Vector2
+from pygame import Vector2, Vector3
 import core
 
 
