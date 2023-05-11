@@ -25,16 +25,16 @@ def setup():
     print("End setup")
 
 def afficherMenu():
-    core.Draw.rect((255,0,0),(500,360,200,80))
-    core.Draw.text((255,255,255),"J O U E R",(508,373),50)
+    core.Draw.rect((255,0,0),(490,360,220,80))
+    core.Draw.text((0,0,0),"J O U E R",(508,373),50)
     core.Draw.text((255,0,0),"P R E S S  ' P '  T O  P L A Y",(492,450),20)
 
     if core.getKeyPressList("p"):
         core.memory("etat",Etat.JEU)
 
 def afficherJeu():
-    core.Draw.rect((255,0,0),(350,280,100,40))
-    core.Draw.text((255,255,255),"GAMEOVER",(355,282),30)
+    core.Draw.rect((255,0,0),(5,5,200,30))
+    core.Draw.text((0,0,0),"S C O R E : .......",(7,2),30)
 
 
     if core.getKeyPressList("x"):
