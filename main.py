@@ -4,7 +4,7 @@ from pygame import Vector3, Vector2, Rect
 
 import core
 from asteroid import asteroids
-from player import drawGun, moveGun
+from player import Player
 
 
 class Etat(Enum):
@@ -66,8 +66,7 @@ def run():
             afficherMenu()
         if core.memory('etat') == Etat.JEU:
             afficherJeu()
-            drawGun()
-            moveGun()
+            Player()
             core.printMemory()
             asteroids()
         if core.memory('etat') == Etat.GAMEOVER:
